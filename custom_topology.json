@@ -1,0 +1,23 @@
+{
+    "links": [{
+            "source": "a",
+            "target": "b"
+        },
+        {
+            "source": "b",
+            "target": "d"
+        },
+        {
+            "source": "c",
+            "target": "d"
+        },
+        {
+            "source": "d",
+            "target": "e"
+        },
+        {
+            "source": "d",
+            "target": "f"
+        }
+    ]
+}

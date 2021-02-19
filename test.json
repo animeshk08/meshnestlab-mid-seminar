@@ -1,0 +1,32 @@
+{
+    "nodes": [{
+            "id": 0,
+            "x": 0,
+            "y": 0
+        }, {
+            "id": 0,
+            "x": 10,
+            "y": 0
+        },
+        {
+            "id": 0,
+            "x": 20,
+            "y": 0
+        }
+    ],
+    "links": [{
+            "source": "a",
+            "target": "b",
+            "rate": "100mbit",
+            "source_latency": 2,
+            "target_latency": 10
+        },
+        {
+            "source": "b",
+            "target": "c",
+            "rate": "100mbit",
+            "source_latency": 2,
+            "target_latency": 10
+        }
+    ]
+}
