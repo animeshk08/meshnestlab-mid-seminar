@@ -1,0 +1,42 @@
+* All the files used and created during the seminar can also be found here *
+https://github.com/animeshk08/meshnestlab-mid-seminar
+
+* Creating topologies *
+
+./topology.py --formatted grid4 2 2 > graph_grid4.json
+./topology.py --formatted grid8 3 3 > graph_grid8.json
+./topology.py --formatted circle 10 > graph_circle.json
+./topology.py --formatted line 10 > graph_line.json
+./topology.py --formatted tree 5 2 > graph_tree.json
+
+* Creating the network * 
+./network.py apply custom_topology.json
+
+* Show the network * 
+./network.py show
+
+* Clear the network * 
+./network.py clear
+or
+./network.py apply none
+
+* Run a protocol *
+./software.py start cjdns
+
+* Ping the node *
+./tools.py ping
+
+* Get traffic data *
+./tools.py traffic --duration 3
+
+* Get node information *
+./software.py --verbosity verbose run 'ip a && echo "Hello from inside node"'
+
+* Stop running the protocol *
+./software.py stop cjdns
+
+* Move nodes by random distance *
+./mobility.py --output_file new.json graph_grid4.json random --distance 50
+
+* Update connections after moving the nodes *
+./mobility.py --output_file new_connected.json new.json connect --distance 50 
